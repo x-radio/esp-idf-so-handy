@@ -2,8 +2,8 @@ build/
 sdkconfig
 sdkconfig.old
 managed_components/
-.devcontainer/*
-.vscode/*
+.devcontainer/
+.vscode/
 
 *.swp
 *.swo
