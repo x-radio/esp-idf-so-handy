@@ -2,7 +2,7 @@
 //=============================================================================
 #include "misc.h"
 #include "gt.h"
-#include "WiFi.h"
+#include "mycomp.h"
 //=============================================================================
 extern "C" void app_main()
 {
@@ -11,6 +11,7 @@ extern "C" void app_main()
     vTaskPrioritySet(NULL, 0);
 
     GT_Init();
+    mycomp();
 
     while (true)
     {
