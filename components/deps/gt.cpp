@@ -5,8 +5,8 @@
 #include "misc.h"
 #include "gt.h"
 //=============================================================================
-uint64              	        global_timer;
-static uint64              	    _gt;
+uint64                          global_timer;
+static uint64                      _gt;
 static esp_timer_handle_t       timerHandle;
 //=============================================================================
 void timer_cb(void* arg)

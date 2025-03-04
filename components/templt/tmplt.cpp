@@ -7,8 +7,8 @@
 //=============================================================================
 #define INTRVL                  GT_MSEC(1000)
 //=============================================================================
-static uint64       			timer = GT_MSEC(2000);
-static uint8        			state;
+static uint64                   timer = GT_MSEC(2000);
+static uint8                    state;
 static const char*              TAG = "[TM]";
 //=============================================================================
 static void staticFunc();
