@@ -5,8 +5,10 @@
 //=============================================================================
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_task_wdt.h"
 #include "Arduino.h"
 #include "esp_log.h"
+#include "sdkconfig.h"
 //=============================================================================
 // esp_log_level_t esp_log_level_get(const char *tag);
 // esp_log_level_set(TAG, ESP_LOG_VERBOSE);

@@ -6,12 +6,14 @@
 #include "gt.h"
 //=============================================================================
 uint64                          global_timer;
-static uint64                      _gt;
+static uint64                   _gt;
 static esp_timer_handle_t       timerHandle;
 //=============================================================================
 void timer_cb(void* arg)
 {
+    vTaskSuspendAll();
     _gt = esp_timer_get_time()/1000;
+    xTaskResumeAll();
 }
 //---------------------------
 void GT_Init()
